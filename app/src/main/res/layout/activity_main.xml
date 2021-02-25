@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/firsttextviewid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:textSize="28dp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/secondtextviewid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="0"
+        android:gravity="right"
+        android:textSize="28dp"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="4"
+        >
+        <Button
+            android:id="@+id/oneButtonID"
+            android:onClick="digitfunction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="35dp"
+            android:text="1"
+            />
+        <Button
+            android:id="@+id/twoButtonID"
+            android:onClick="digitfunction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="35dp"
+            android:text="2"
+            />
+        <Button
+            android:id="@+id/threeButtonID"
+            android:onClick="digitfunction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="35dp"
+            android:text="3"
+            />
+        <Button
+            android:id="@+id/CButtonID"
+            android:onClick="clearfunction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="35dp"
+            android:text="C"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="3"
+        >
+        <Button
+            android:id="@+id/fourButtonID"
+            android:onClick="digitfunction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="35dp"
+            android:text="4"
+            />
+        <Button
+            android:id="@+id/fiveButtonID"
+            android:onClick="digitfunction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="35dp"
+            android:text="5"
+            />
+
+        <Button
+            android:id="@+id/sumbuttonID"
+            android:onClick="operatorfunction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="35dp"
+            android:text="+"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2"
+        >
+
+            <RadioButton
+                android:id="@+id/radiobuttonid"
+                android:onClick="Intentfunction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="35dp"
+                android:text="About"
+                />
+
+
+
+        <Button
+            android:id="@+id/resultbuttonID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="resultfunction"
+            android:text="="
+            android:textSize="35dp" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
